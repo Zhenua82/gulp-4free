@@ -1,0 +1,173 @@
+*
+    box-sizing: border-box
+$color-txt-w: #ffffff
+$color-txt-b: #373737
+$colorr: #ff9d00
+@mixin btn
+    display: inline-block
+    background-color: $colorr
+    border: none
+    border-radius: 5%
+    color: $color-txt-w
+    font-size: 14px
+    line-height: 22px
+    text-align: center
+    padding: 12px 22px 12px 22px
+@keyframes animat
+    from
+        opacity: 0
+        margin-top: 400px
+    40%
+        opacity: 0
+        transform: rotateY(0.25turn)
+    41%
+        opacity: 1
+    to
+        margin-top: 0px
+        transform: rotateY(0turn)
+body
+    display: block
+    text-align: center
+    // font-family: Tahoma, sans-serif
+    font-family: 'Roboto', sans-serif
+    // font-family: 'Bebas Neue Reg'
+    // font-family: 'Bebas Neue Bold'
+h1
+    color: red
+    background-color: blue
+    @include btn
+.picter-input
+    margin-top: 14px
+    text-align: left
+    color: $color-txt-b
+    font-family: 'Roboto-Light'
+    font-size: 14px
+    line-height: 42px
+    text-align: left
+    padding: 11px 122px 11px 18px
+    border-radius: 5%
+    width: 320px
+    &:focus-visible
+        outline: none
+.picter-btn
+    @include btn
+.img
+    img
+        display: block
+        margin: auto
+        height: 300px
+        animation-name: animat
+        animation-duration: 5s
+
+@import flex.sass
+
+// Слайдеры:
+
+    // Бутстрап:
+.sect-slider-bootst
+    width: 30%
+    background-color: green
+    margin: auto
+    margin-top: 20px
+.carousel-control-prev-icon
+    background-color: red
+    color: red
+    border-radius: 50% 
+.carousel-control-next-icon
+    background-color: red
+    border-radius: 50% 
+.carousel-item
+    // height: 100%
+    h5
+        color: red
+    img
+        height: 400px
+
+// Фоторама:
+.sect-fotorama
+    // background-color: green
+    padding-top: 40px
+    width: 40%
+    margin: auto
+
+// Slick слайдер (его классы настройка):
+.slider
+    padding-top: 40px
+    width: 100%
+    min-width: 0 //Указывается если сам .slider флексовый или если его оболочка флексовая, это же указывается и для самой оболочки
+    position: relative
+    margin: auto
+    /* Слайдер */
+    .slick-slider
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted
+    /* Ограничивающая оболочка */
+    .slick-list
+        overflow: hidden 
+    /* Лента слайдов */
+    .slick-track
+        display: flex
+        align-items: flex-start
+        // flex-direction: column//Устанавливается для вертикального слайдера, либо display: block
+    /* Слайд */
+    .slick-slide
+        // height: 430px//Устанавливается для вертикального слайдера
+        text-align: center
+        opacity: 0.5
+        transition: all 0.3s ease 0s//Плавный переход при прокрутке
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active
+    /* Слайд основной */
+    .slick-slide.slick-current
+    /* Слайд по центру */
+    .slick-slide.slick-center
+        opacity: 1
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned
+    /* Стрелка */
+    .slick-arrow
+        position: absolute
+        top: 50%
+        z-index: 5
+        font-size: 0//убираем надпись с кнопки
+        width: 22px
+        height: 78px
+        border: 1px solid $colorr
+    /* Стрелка влево */
+    .slick-arrow.slick-prev
+        margin-left: -47%
+        background: url(../images/dest/slider/rounded_rectangle_141.webp) center no-repeat, url(../images/dest/slider/rectangle_140.webp) center no-repeat
+        &:hover
+            background: url(../images/dest/slider/rounded_rectangle_149.webp) center no-repeat, url(../images/dest/slider/rectangle_142.webp) center no-repeat
+    /* Стрелка вправо */
+    .slick-arrow.slick-next
+        margin-left: 47%
+        background: url('../images/dest/slider/rounded_rectangle_145.webp') center no-repeat, url('../images/dest/slider/rectangle_140.webp') center no-repeat
+        &:hover
+            background: url('../images/dest/slider/rounded_rectangle_143.webp') center no-repeat, url('../images/dest/slider/rectangle_142.webp') center no-repeat 
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled
+        opacity: 0.2
+    /* Точки (булиты) */
+    .slick-dots
+        display: flex
+        justify-content: center
+        align-items: center
+    .slick-dots li
+        list-style: none
+        margin: 0px 10px
+    /* Активная точка */
+    .slick-dots li.slick-active button
+        background-color: rgba(red, 0.5)
+        border: 2px solid black
+    /* Элемент точки */
+    .slick-dots li button
+        font-size: 0
+        width: 10px
+        height: 10px
+        background-color: black
+        border-radius: 50%
+        border: none
+    

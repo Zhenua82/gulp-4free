@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- чтоб не было прокрутки -->
+    <meta name="robots" content="index, follow"> <!-- для индексации страниц -->
+    <meta name="theme-color" content="#ffffff"> <!-- для задания цвета темы (или фона) для браузера мобильных устройств. Этот тег позволяет веб-разработчикам указать основной цвет темы, который может быть использован браузером при отображении элементов пользовательского интерфейса, таких как адресная строка или заголовки в мобильных браузерах. -->
+    <meta name="description" content="Салон красоты по адресу: г. Анапа, ул. Ленина, д.195, 3 подъезд, цоколь. Тел: +7 918-643-60-58" />
+    <title>Document (не должен быть коротким - оптимальная длина около 50-70 символов)</title>
+
+    <link rel="alternate" media="only screen and (max-width: 640px)" href=" https://strizhki-anapa.ru/" /> <!-- используется для определения альтернативной версии ресурса, предназначенной для устройств с шириной экрана, не превышающей 640 пикселей. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+
+    <!-- Шрифты: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- или: -->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Фавиконка (сайт https://realfavicongenerator.net/), из полученного архива копируем файлы favicon.ico и site.webmanifest в корневую папку, остальные файлы в папку img, прописываем пути: -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#17a045">
+    <meta name="msapplication-TileColor" content="#da532c"><!-- для настройки цвета фона, который отображается при создании ярлыка (тайл) для веб-сайта в операционных системах Microsoft, таких как Windows 8 и Windows 10. Этот тег определяет цвет фона для плитки, которая может быть использована на стартовом экране или в меню "Пуск" в Windows. -->
+</head>
+<!-- <iframe src="../components/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe> -->
+<body>
+    123
+    <h1>Привет всем!!!</h1>
+    <div class="img">
+      <img src="images/dest/fff.webp" alt="картинка" onerror="this.onerror=null; this.src='images/dest/jpg/fff.jpg';">
+    </div>
+    
+
+<!-- Слайдеры: -->
+    <div class="sect-slider-bootst">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/dest/slider/layer_133.webp" class="d-block w-100" alt="картинка">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dest/slider/rectangle_326.webp" class="d-block w-100" alt="картинка">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dest/slider/rectangle_136.webp" class="d-block w-100" alt="картинка">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dest/slider/layer_133.webp" class="d-block w-100" alt="картинка">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Это я!</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div><!-- /.sect-slider-bootst -->
+
+    <div class="sect-fotorama">
+        <div class="fotorama"
+        data-nav="thumbs"
+        data-loop="true"
+        data-allowfullscreen="native">
+            <img src="https://s.fotorama.io/1.jpg">
+            <img src="https://s.fotorama.io/2.jpg">
+            <img src="images/dest/fff.webp" alt="картинка">
+            <img src="https://s.fotorama.io/2.jpg">
+          </div>
+    </div><!-- /.sect-fotorama -->
+
+    <div class="sect_slick">
+        <div class="slider">
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/layer_133.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_326.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_136.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_326.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_136.webp" alt="картинка">
+            </div>
+        </div>
+        <div class="strelki">
+            <div class="left" style="position: absolute; margin-left: 10%; margin-top: -100px; color: red; cursor: pointer">Левая стрелка</div>
+            <div class="right" style="position: absolute; margin-left: 90%; margin-top: -100px; color: red; cursor: pointer">Правая стрелка</div>
+            <div class="avtoplay" style="position: absolute; margin-left: 40%; color: red; cursor: pointer">Автозапуск</div>
+            <div class="pausa" style="position: absolute; margin-left: 60%; color: blue; cursor: pointer">Пауза</div>
+        </div>
+    </div><!-- /.sect_slick -->
+
+ <script src="js/code.jquery.com_jquery-2.2.4.min.js"></script>
+ <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+ <script src="js/app.min.js"></script>
+ <!-- Подключение прокрутки и анимации: -->
+ <link rel="stylesheet" href="css/animate.min.css">
+ <script src="js/wow.min.js"></script>
+ <script>
+     new WOW().init();
+ </script>
+ 
+ <!-- Подключение слайдера бутстрап: -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <!-- Подключение слайдера фоторама: -->
+ <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+ <!-- Подключение слайдера слик: -->
+ <script src="js/slick.min.js"></script>
+</body>
+</html>

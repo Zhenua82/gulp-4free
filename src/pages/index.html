@@ -1,0 +1,106 @@
+<!--=include header.html -->
+
+<!-- <iframe src="../components/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe> -->
+<body>
+    123
+    <h1>Привет всем!!!</h1>
+    <form action="PHPMailer/mail.php" method="POST" enctype="multipart/form-data" class="form">
+      <input class="picter-input" type="tel" id="user_phone" name="user_phone" placeholder="+7(XXX)XXX-XX-XX">
+      <label for=""> Загрузите файл</label>
+      <input type="file" name="file" id="file">
+      <button type="submit" class="picter-btn">Оставить заявку!</button>
+    </form>
+    <div class="img">
+      <img src="images/dest/fff.webp" alt="картинка" onerror="this.onerror=null; this.src='images/dest/jpg/fff.jpg';">
+    </div>
+    <form action="telegram.php" method="POST">
+      <input class="picter-input" type="tel" name="user_phone" placeholder="+7(XXX)XXX-XX-XX">
+      <button type="submit" class="picter-btn">Оставить заявку!</button>
+    </form>
+
+    <div class="popumail">
+      <div class="window" >
+          <div class="xx" id="xxx">
+              &times;
+          </div>
+          <div class="window-title">
+              Спасибо за обращение! <br> Мы с вами свяжемся.
+          </div>
+      </div>
+    </div><!-- /.popumail -->
+    
+
+<!-- Слайдеры: -->
+    <div class="sect-slider-bootst">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/dest/slider/layer_133.webp" class="d-block w-100" alt="картинка">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dest/slider/rectangle_326.webp" class="d-block w-100" alt="картинка">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dest/slider/rectangle_136.webp" class="d-block w-100" alt="картинка">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dest/slider/layer_133.webp" class="d-block w-100" alt="картинка">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Это я!</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div><!-- /.sect-slider-bootst -->
+
+    <div class="sect-fotorama">
+        <div class="fotorama"
+        data-nav="thumbs"
+        data-loop="true"
+        data-allowfullscreen="native">
+            <img src="https://s.fotorama.io/1.jpg">
+            <img src="https://s.fotorama.io/2.jpg">
+            <img src="images/dest/fff.webp" alt="картинка">
+            <img src="https://s.fotorama.io/2.jpg">
+          </div>
+    </div><!-- /.sect-fotorama -->
+
+    <div class="sect_slick">
+        <div class="slider">
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/layer_133.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_326.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_136.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_326.webp" alt="картинка">
+            </div>
+            <div class="slider__item">
+                <img data-lazy="images/dest/slider/rectangle_136.webp" alt="картинка">
+            </div>
+        </div>
+        <div class="strelki">
+            <div class="left" style="position: absolute; margin-left: 10%; margin-top: -100px; color: red; cursor: pointer">Левая стрелка</div>
+            <div class="right" style="position: absolute; margin-left: 90%; margin-top: -100px; color: red; cursor: pointer">Правая стрелка</div>
+            <div class="avtoplay" style="position: absolute; margin-left: 40%; color: red; cursor: pointer">Автозапуск</div>
+            <div class="pausa" style="position: absolute; margin-left: 60%; color: blue; cursor: pointer">Пауза</div>
+        </div>
+    </div><!-- /.sect_slick -->
+
+ <!--=include footer.html -->
+ <!--=include flex.html -->
+</body>
+</html>
